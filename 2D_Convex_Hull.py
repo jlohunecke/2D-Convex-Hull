@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 def lexicoSort(points):
     return sorted(points, key=lambda k: [k[0], k[1]])
 
-# checks weather points x,y and z make a right turn
+# checks weather points x,y and z make a right turn using determiant-criterion
 def rBend(x, y, z):
     return (((y[0]-x[0])*(z[1]-x[1]))-((z[0]-x[0])*(y[1]-x[1])) < 0)
 
