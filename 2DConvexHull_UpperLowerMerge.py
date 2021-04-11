@@ -44,6 +44,7 @@ def convexHull (points):
     return u + l
 
 
+
 # coordinate sampling
 points = []
 
@@ -55,7 +56,7 @@ for i in range(0,40):
 convexHull = convexHull(points)
 
 # plot
-plt.scatter([i[0] for i in points], [i[1] for i in points], marker='x')
+plt.scatter([i[0] for i in points], [i[1] for i in points])
 plt.plot([i[0] for i in convexHull], [i[1] for i in convexHull], c="g")
 plt.show()
 
